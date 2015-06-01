@@ -1,0 +1,13 @@
+Masl\Bundle\MPTBundle\Entity\Tag:
+    type: entity
+# key fields
+    id: 
+        id:
+            type: bigint
+            generator:
+                strategy: AUTO
+# attributes
+    fields:
+        title:
+            type: string
+            length: 191

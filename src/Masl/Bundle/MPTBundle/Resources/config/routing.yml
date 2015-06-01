@@ -1,0 +1,15 @@
+masl_mpt_article:
+    resource: "@MaslMPTBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+masl_mpt_tag:
+    resource: "@MaslMPTBundle/Resources/config/routing/tag.yml"
+    prefix:   /tag
+
+masl_mpt_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: MaslMPTBundle:Default:index }
+
+masl_mpt_upload:
+    path:     /upload
+    defaults: { _controller: MaslMPTBundle:Files:upload }

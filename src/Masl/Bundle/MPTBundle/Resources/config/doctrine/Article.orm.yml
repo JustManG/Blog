@@ -1,0 +1,20 @@
+Masl\Bundle\MPTBundle\Entity\Article:
+    type: entity
+# key fields
+    id: 
+        id:
+            type: bigint
+            generator:
+                strategy: AUTO
+# attributes
+    fields:
+        title:
+            type: string
+            length: 191
+        content:
+            type: string
+            length: 191
+    manyToMany:
+        tags:
+            targetEntity: Tag
+            

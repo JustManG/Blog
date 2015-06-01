@@ -1,0 +1,7 @@
+just_man_blog:
+    resource: "@JustManBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

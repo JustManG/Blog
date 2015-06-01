@@ -1,0 +1,30 @@
+tag:
+    path:     /
+    defaults: { _controller: "MaslMPTBundle:Tag:index" }
+
+tag_show:
+    path:     /{id}/show
+    defaults: { _controller: "MaslMPTBundle:Tag:show" }
+
+tag_new:
+    path:     /new
+    defaults: { _controller: "MaslMPTBundle:Tag:new" }
+
+tag_create:
+    path:     /create
+    defaults: { _controller: "MaslMPTBundle:Tag:create" }
+    requirements: { _method: post }
+
+tag_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "MaslMPTBundle:Tag:edit" }
+
+tag_update:
+    path:     /{id}/update
+    defaults: { _controller: "MaslMPTBundle:Tag:update" }
+    requirements: { _method: post|put }
+
+tag_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "MaslMPTBundle:Tag:delete" }
+    requirements: { _method: post|delete }
